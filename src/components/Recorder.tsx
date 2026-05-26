@@ -289,7 +289,7 @@ export default function Recorder({
           <AlertTriangle className="h-4 w-4 text-red-500 shrink-0 mt-0.5" />
           <div>
             <p className="font-bold">지원되지 않는 브라우저이거나 오디오 컨텍스트가 로드되지 않았습니다.</p>
-            <p className="mt-1">E-Land STT 서비스는 Chrome 브라우저에 최적화되어 작동합니다. 크롬 브라우저를 사용하여 접속해 주십시오.</p>
+            <p className="mt-1">SH Hotel STT 서비스는 Chrome 브라우저에 최적화되어 작동합니다. 크롬 브라우저를 사용하여 접속해 주십시오.</p>
           </div>
         </div>
       )}

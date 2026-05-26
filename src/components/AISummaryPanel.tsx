@@ -73,8 +73,8 @@ export default function AISummaryPanel({
     return `
 <div style="max-width:650px; margin:20px auto; background-color:#ffffff; padding:28px; border:1px solid #e1e8f0; border-top:10px solid #0B2240; border-radius:12px; font-family:'Inter', 'Malgun Gothic', sans-serif; box-shadow:0 4px 6px rgba(0,0,0,0.02);">
   <div style="border-bottom:2px solid #C5A880; padding-bottom:18px; margin-bottom:20px; text-align:center;">
-    <h2 style="color:#0B2240; margin:0; font-size:22px; font-weight:bold; letter-spacing:-0.5px;">E-LAND HOTEL MEETING MINUTES</h2>
-    <p style="color:#A38258; margin:4px 0 0 0; font-size:11px; text-transform:uppercase; letter-spacing:2px; font-weight:bold;">대모산 호텔사업부 IT 서비스 회의록 요약본</p>
+    <h2 style="color:#0B2240; margin:0; font-size:22px; font-weight:bold; letter-spacing:-0.5px;">SH HOTEL MEETING MINUTES</h2>
+    <p style="color:#A38258; margin:4px 0 0 0; font-size:11px; text-transform:uppercase; letter-spacing:2px; font-weight:bold;">대모산 SH호텔사업부 IT 서비스 회의록 요약본</p>
   </div>
   
   <table style="width:100%; border-collapse:collapse; margin-bottom:24px; font-size:12.5px; border:1px solid #edf2f7;">
@@ -111,7 +111,7 @@ export default function AISummaryPanel({
   </div>
   
   <div style="margin-top:35px; border-top:1px dashed #cbd5e1; padding-top:14px; text-align:center; font-size:10.5px; color:#94a3b8; line-height:1.4;">
-    본 아카이브 공문은 E-Land Hotel Meeting Recorder AI Core에 의해 작성되었습니다. <br>
+    본 아카이브 공문은 SH Hotel Meeting Recorder AI Core에 의해 작성되었습니다. <br>
     메일 수신함이나 인트라넷 보고서 작성 화면에 그대로 붙여넣어 사내 공유 가능합니다.
   </div>
 </div>
@@ -119,7 +119,7 @@ export default function AISummaryPanel({
   };
 
   const handleCopyMarkdown = () => {
-    let fullText = `# E-LAND HOTEL MEETING MINUTES\n\n`;
+    let fullText = `# SH HOTEL MEETING MINUTES\n\n`;
     fullText += `## [회의 정보]\n`;
     fullText += `- 회의안건: ${meetingTitle || "미상"}\n`;
     fullText += `- 소속부서: ${meetingDept || "미지정"}\n`;
@@ -138,7 +138,7 @@ export default function AISummaryPanel({
 
   const handleCopyEmailHtml = async () => {
     const htmlContent = generateEmailHtml();
-    let plainText = `[E-LAND HOTEL MEETING MINUTES]\n\n`;
+    let plainText = `[SH HOTEL MEETING MINUTES]\n\n`;
     plainText += `회의안건: ${meetingTitle || "미상"}\n`;
     plainText += `소속부서: ${meetingDept}\n\n`;
     plainText += ` 요약 내용:\n${summary}\n\n`;
@@ -255,7 +255,7 @@ export default function AISummaryPanel({
               )}
             </button>
 
-            {/* Copy E-Land formatted styled Newsletter HTML */}
+            {/* Copy SH formatted styled Newsletter HTML */}
             <button
               id="btn-copy-styled-email"
               onClick={handleCopyEmailHtml}
@@ -284,7 +284,7 @@ export default function AISummaryPanel({
             <div className="animate-spin rounded-full h-10 w-10 border-2 border-slate-100 border-t-[#C5A880]" />
             <Sparkles className="h-5 w-5 text-[#C5A880] absolute animate-pulse" />
           </div>
-          <p className="font-semibold text-sm text-slate-800">이랜드 비즈니스 리포트 추출 중</p>
+          <p className="font-semibold text-sm text-slate-800">SH 비즈니스 리포트 추출 중</p>
           <p className="text-xs text-slate-400 mt-1 max-w-xs leading-normal">
             회의 주요 키워드와 업무 할당(Action Item)을 실시간으로 감지하여 명세식 보고서 템플릿으로 구조화하고 있습니다. 잠시만 기다려 주세요.
           </p>

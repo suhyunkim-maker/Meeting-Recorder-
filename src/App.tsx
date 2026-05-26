@@ -13,12 +13,12 @@ import {
   FileDown
 } from 'lucide-react';
 
-const LOCAL_STORAGE_KEY = 'eland-hotel-meetings';
+const LOCAL_STORAGE_KEY = 'sh-hotel-meetings';
 
-// High-fidelity pre-populated E-Land default meeting to make the UI look stunning and complete on first load
+// High-fidelity pre-populated SH default meeting to make the UI look stunning and complete on first load
 const DEFAULT_MEETING: Meeting = {
-  id: 'eland-sample-1',
-  title: '대모산 이랜드 호텔 로봇 자동화 서비스 설계 주간 미팅',
+  id: 'sh-sample-1',
+  title: '대모산 SH호텔 로봇 자동화 서비스 설계 주간 미팅',
   department: '호텔 IT 사업부',
   participants: '김수현 PM, 박성진 테크리드, 이나라 서비스팀장',
   date: new Date().toISOString().slice(0, 10),
@@ -190,7 +190,7 @@ export default function App() {
           // Reset to default empty
           const resetM: Meeting = {
             id: 'meeting-empty',
-            title: '대모산 이랜드 호텔 기본 연계 미팅',
+            title: '대모산 SH호텔 기본 연계 미팅',
             department: '호텔 IT 사업부',
             participants: '',
             date: new Date().toISOString().slice(0, 10),

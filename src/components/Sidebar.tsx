@@ -183,7 +183,7 @@ export default function Sidebar({
           </div>
           <div>
             <h1 className="font-display font-bold text-lg tracking-wider text-slate-100 leading-tight">
-              E-LAND HOTEL
+              SH HOTEL
             </h1>
             <p className="text-[10px] tracking-widest text-[#C5A880] uppercase font-semibold">
               IT Meeting Recorder
@@ -191,7 +191,7 @@ export default function Sidebar({
           </div>
         </div>
         <div className="text-[11px] text-slate-400 mt-2 bg-black/25 px-2.5 py-1 rounded border border-white/5 font-mono">
-          대모산 호텔사업부 IT 서비스 기획
+          대모산 SH호텔 IT 서비스 기획
         </div>
       </div>
 
@@ -462,7 +462,7 @@ export default function Sidebar({
 
       {/* Footer Info */}
       <div className="p-4 border-t border-white/5 text-[11px] text-slate-400 font-mono text-center bg-black/10 shrink-0">
-        E-Land System Environment
+        SH Hotel System Environment
       </div>
     </aside>
   );

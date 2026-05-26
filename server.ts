@@ -43,7 +43,7 @@ app.post("/api/summarize", async (req, res) => {
     const ai = getGeminiClient();
     
     const prompt = `
-당신은 대모산 이랜드 호텔사업부의 유능한 IT 서비스 기획 담당자이자 회의 지원 AI 비서입니다.
+당신은 대모산 SH호텔사업부의 유능한 IT 서비스 기획 담당자이자 회의 지원 AI 비서입니다.
 다음 미팅 정보를 분석하고 고품질의 실무 맞춤형 '회의록 요약 및 Action Item(To-Do)'을 도출해 주세요.
 
 [미팅 메타데이터]
@@ -55,7 +55,7 @@ app.post("/api/summarize", async (req, res) => {
 ${content}
 
 이 내용을 기반으로 다음 형태의 상세한 요약을 만들어 주십시오.
-1. 요약(summary)은 이랜드 공식 미팅 템플릿 양식에 맞추어 마크다운 포맷으로 가독성 높게 작성해 주세요. (핵심 안건, 주요 논의 사안 포함)
+1. 요약(summary)은 SH 공식 미팅 템플릿 양식에 맞추어 마크다운 포맷으로 가독성 높게 작성해 주세요. (핵심 안건, 주요 논의 사안 포함)
 2. Action Items(Action Item 목록)는 각 업무별 기한이나 담당자가 대화 내용에 명시되어 있다면 해당 내용을 세부적으로 포함하여 분리된 배열 형태로 반환해 주세요.
 `;
 
@@ -70,7 +70,7 @@ ${content}
           properties: {
             summary: {
               type: Type.STRING,
-              description: "이랜드 호텔사업부 양식에 맞춘 논리적 마크다운 회의록 요약 (각종 섹션 헤딩, 글머리 목록 등 포함)"
+              description: "SH 호텔사업부 양식에 맞춘 논리적 마크다운 회의록 요약 (각종 섹션 헤딩, 글머리 목록 등 포함)"
             },
             actionItems: {
               type: Type.ARRAY,
@@ -120,7 +120,7 @@ async function setupViteOrStatic() {
   }
 
   app.listen(PORT, "0.0.0.0", () => {
-    console.log(`E-Land Hotel Meeting Recorder Server listening on port ${PORT}`);
+    console.log(`SH Hotel Meeting Recorder Server listening on port ${PORT}`);
   });
 }
 
